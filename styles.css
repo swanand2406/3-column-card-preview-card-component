@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* 
+ */
+
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+
+  --transparentWwhite: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+  --veryLightGray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  font-family: "Lexend Deca", sans-serif;
+  background: var(--veryLightGray);
+}
+
+.main-container {
+  width: 375px;
+  margin: 87px auto 40px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+article {
+  width: 100%;
+  height: 440px;
+  padding: 48px;
+}
+
+#Sedans {
+  background-color: var(--brightOrange);
+}
+
+#SUVs {
+  background-color: var(--darkCyan);
+}
+
+#Luxury {
+  background-color: var(--veryDarkCyan);
+}
+
+img {
+  margin-bottom: 36px;
+}
+
+h2 {
+  color: var(--veryLightGray);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+p {
+  color: var(--transparentWwhite);
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+button {
+  width: 148px;
+  height: 46px;
+  border-radius: 45px;
+  border-style: none;
+  background-color: var(--veryLightGray);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+#sedans-btn {
+  color: var(--brightOrange);
+}
+
+#suvs-btn {
+  color: var(--darkCyan);
+}
+
+#luxury-btn {
+  color: var(--veryDarkCyan);
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid var(--veryLightGray);
+}
+
+#sedans-btn:hover {
+  background-color: var(--brightOrange);
+  color: var(--veryLightGray);
+}
+
+#suvs-btn:hover {
+  background-color: var(--darkCyan);
+  color: var(--veryLightGray);
+}
+
+#luxury-btn:hover {
+  background-color: var(--veryDarkCyan);
+  color: var(--veryLightGray);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 944px) {
+  .main-container {
+    width: 924px;
+    display: flex;
+    margin-top: 170px;
+  }
+  article {
+    height: 500px;
+  }
+  p {
+    margin-bottom: 80px;
+  }
+}
